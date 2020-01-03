@@ -168,3 +168,25 @@ component가 죽을 때 발생
             this.setState({ isLoading: false });
         }, 6000);
     }
+
+## axios
+
+    npm i axios
+
+## yts api
+
+    yts.lt/api
+    https://yts-proxy.now.sh/list_movies.json
+
+yts는 불법사이트라서 api(?)가 자주 바뀌므로 밑의 주소를 사용.
+
+## 비동기 함수 사용
+
+    getMovies = async () => {
+        const movies = await axios.get("https://yts-proxy.now.sh/list_movies.json");
+    };
+    componentDidMount() {
+        this.getMovies();
+    }
+
+async를 사용함으로써 await을 사용할 수 있고 await을 사용함으로써 await으로 무엇을 기다리길 원하는지(여기서는 axios) 지정.
