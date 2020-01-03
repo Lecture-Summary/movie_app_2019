@@ -90,3 +90,19 @@ install 후 package.json 파일에서 dependencies를 보면 정상적으로 설
 array인지 boolean인지 object 인지도 체크가능하다.
 
 isRequired를 생략하면 type만 체크한다.
+
+## function, class Component
+
+    function App() {
+
+    }
+
+    class App extnds React.Component {
+
+    }
+
+선언
+
+## state
+
+state는 보통 동적 데이터와 함께 작업할 때 만들어진다, 변화는 데이터, 존재하지 않는 데이터 등등
