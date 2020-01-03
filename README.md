@@ -60,3 +60,7 @@ map은 array의 각 item에서 function을 실행하는 array를 가지는 javas
     [2, 3, 4, 5]
 
 결과
+
+## react key
+
+react는 똑똑하지 않기 때문에 component마다 key property를 부여해야한다.
