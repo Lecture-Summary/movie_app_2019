@@ -94,15 +94,31 @@ isRequired를 생략하면 type만 체크한다.
 ## function, class Component
 
     function App() {
-
+        return value;
     }
 
     class App extnds React.Component {
-
+        render() {
+            return value;
+        }
     }
 
 선언
 
+react는 자동적으로 class component의 render method를 실행한다.
+
 ## state
 
 state는 보통 동적 데이터와 함께 작업할 때 만들어진다, 변화는 데이터, 존재하지 않는 데이터 등등
+
+## 함수
+
+    add = () => {
+        console.log("add");
+    };
+
+    function add() {
+        console.log("add");
+    };
+
+위와 밑은 같은 기능 함수
