@@ -37,3 +37,26 @@ App component와 Potato component를 두개 사용하여 에러발생.
 food component에 fav라는 이름의 property에 kimchi라는 value를 준다.
 
 value에는 string뿐만아니라 boolean, array도 넣을 수 있다.
+
+## map
+
+map은 array의 각 item에서 function을 실행하는 array를 가지는 javascript function이며 그 function의 result를 갖는 array를 출력한다.
+
+    const friends = ["dal", "mark", "lynn", "japan guy"];
+    friends.map(current => {
+        console.log(current);
+        return 0;
+    })
+    friends.map(function(current) {
+        console.log(current);
+        return 0;
+    })
+    friends.map(current=>{
+        return current+1;
+    });
+
+사용법
+
+    [2, 3, 4, 5]
+
+결과

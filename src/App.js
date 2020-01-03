@@ -1,17 +1,32 @@
 import React from "react";
 
-function Food({ fav }) {
-  return <h1>I like {fav}</h1>;
+function Food({ name, picture }) {
+  return (
+    <div>
+      <h2>I like {name}</h2>
+      <img src={picture} />
+    </div>
+  );
 }
+
+const foodILike = [
+  {
+    name: "Kimchi",
+    image: "https://i.ytimg.com/vi/eTucCw1w6Ak/maxresdefault.jpg"
+  },
+  {
+    name: "Samgyeopsal",
+    image:
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F7%2F77%2FSamgyeopsal-gui.jpg%2F1200px-Samgyeopsal-gui.jpg&f=1&nofb=1"
+  }
+];
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello</h1>
-      <Food fav="kimchi" />
-      <Food fav="ramen" />
-      <Food fav="samgiopsal" />
-      <Food fav="chukumi" />
+      {foodILike.map(dish => (
+        <Food name={dish.name} picture={dish.image} />
+      ))}
     </div>
   );
 }
