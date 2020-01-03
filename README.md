@@ -149,3 +149,22 @@ component가 update가 된 발생
     componentWillUnmount() {}
 
 component가 죽을 때 발생
+
+## ES6
+
+    const { isLoading } = this.state;
+    isLoading
+
+    this.state.isLoading
+
+위와 아래 모두 같은 뜻
+
+## delay function
+
+    setTimeout(function, time)
+
+    componentDidMount() {
+        setTimeout(() => {
+            this.setState({ isLoading: false });
+        }, 6000);
+    }
