@@ -64,3 +64,29 @@ map은 array의 각 item에서 function을 실행하는 array를 가지는 javas
 ## react key
 
 react는 똑똑하지 않기 때문에 component마다 key property를 부여해야한다.
+
+## npm i prop-types
+
+prop-types는 전달반은 property가 내가 원하는 property인지 확인해준다.
+
+    npm i prop-types
+
+    "dependencies": {
+        "prop-types": "^15.7.2"
+    }
+
+install 후 package.json 파일에서 dependencies를 보면 정상적으로 설치되었는지 확인 가능.
+
+    Food.propTypes = {
+        name: PropTypes.string.isRequired,
+        picture: PropTypes.string.isRequired,
+        rating: PropTypes.number.isRequired
+    };
+
+        rating: PropTypes.number
+
+사용법, property에 string이 필요하면 string.isRequired, number가 필요하면 number.isRequired
+
+array인지 boolean인지 object 인지도 체크가능하다.
+
+isRequired를 생략하면 type만 체크한다.
