@@ -111,6 +111,17 @@ react는 자동적으로 class component의 render method를 실행한다.
 
 state는 보통 동적 데이터와 함께 작업할 때 만들어진다, 변화는 데이터, 존재하지 않는 데이터 등등
 
+    setState( { count: 1 })
+
+state object의 count를 1로 설정한다.
+
+setState를 사용하지 않으면 새 state와 함께 render function이 호출되지 않는다.
+
+    this.setState(current => ({ count: current.count + 1 }));
+    this.setState({ count: this.state.count + 1 });
+
+밑의 방법보다 위의 방법을 사용해야함.
+
 ## 함수
 
     add = () => {
