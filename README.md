@@ -133,3 +133,19 @@ setState를 사용하지 않으면 새 state와 함께 render function이 호출
     };
 
 위와 밑은 같은 기능 함수
+
+## Component Life Cycle
+
+    componentDidMount() {}
+    constructor() {}
+    render() {}
+
+실행되는 순서 constructor() -> render() -> componentDidMount()
+
+    componentDidUpdate() {}
+
+component가 update가 된 발생
+
+    componentWillUnmount() {}
+
+component가 죽을 때 발생
