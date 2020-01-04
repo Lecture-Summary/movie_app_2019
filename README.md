@@ -190,3 +190,10 @@ yts는 불법사이트라서 api(?)가 자주 바뀌므로 밑의 주소를 사�
     }
 
 async를 사용함으로써 await을 사용할 수 있고 await을 사용함으로써 await으로 무엇을 기다리길 원하는지(여기서는 axios) 지정.
+
+## string.slice(start, end)
+
+    const summary = "alskfdjlsfjdlfkdsjf fjeoifjewfoi sjldsjflk"
+    summary.slice(0, 10);
+
+0-10까지의 string 반환
