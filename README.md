@@ -197,3 +197,31 @@ async를 사용함으로써 await을 사용할 수 있고 await을 사용함으�
     summary.slice(0, 10);
 
 0-10까지의 string 반환
+
+## Deplying to Github Pages
+
+    npm i gh-pages
+
+github의 github page 도메인에 나타나게 해준다. 제일 먼저 이거 깔아야함.
+
+1.  package.json 파일에
+
+        "homepage": "https://hojin9622.github.io/movie_app_2019"
+
+위 코드를 추가한다.
+
+2.  npm run build 를 친다.
+
+        npm run build
+
+3.  package.json 파일의 scripts에 아래 코드를 추가한다.
+
+        "deploy": "gh-pages -d build"
+
+4.  package.json 파일의 scripts에 아래 코드를 추가한다.
+
+        "predeploy": "npm run build"
+
+deploy를 호출할때마다 predeploy를 먼저 호출한다.
+
+5. npm run deploy를 친다.
