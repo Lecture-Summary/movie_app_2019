@@ -264,3 +264,14 @@ HashRouter는 깃허브페이지에 하기 쉬움.
 a href는 html 코드라서 페이지를 새로고침 한다.
 
 react-router-dom 에서 { Link } 라는걸 사용.
+
+## Redirecting
+
+    this.props.history.push("/");
+
+클래스에서 사용할 시.
+
+    const { history } = this.props;
+    history.push("/");
+
+이렇게 해도 됨.
