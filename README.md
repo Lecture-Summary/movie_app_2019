@@ -248,3 +248,19 @@ about 폴더의 About 컴포넌트
     <Route path="/" exact={true} component={Home} />
 
 exact={true} 를 주게되면 정확한 경로에 대해서만 렌더링을 한다.
+
+    import { BrowserRouter, Route } from "react-router-dom";
+
+BrowserRouter는 링크에 #표시가 없다, githubpage에 정확히 설정하기 힘들다.
+
+HashRouter는 깃허브페이지에 하기 쉬움.
+
+## Navigation
+
+    import { Link } from "react-router-dom";
+
+    <Link to="/">Home</Link>
+
+<a href>는 html 코드라서 페이지를 새로고침 한다.
+
+react-router-dom 에서 { Link } 라는걸 사용.
