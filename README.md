@@ -261,6 +261,6 @@ HashRouter는 깃허브페이지에 하기 쉬움.
 
     <Link to="/">Home</Link>
 
-<a href>는 html 코드라서 페이지를 새로고침 한다.
+a href는 html 코드라서 페이지를 새로고침 한다.
 
 react-router-dom 에서 { Link } 라는걸 사용.
