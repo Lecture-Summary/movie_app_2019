@@ -233,3 +233,18 @@ deploy를 호출할때마다 predeploy를 먼저 호출한다.
 네비게이션을 만들어주는 패키지
 
 https://www.npmjs.com/package/react-router-dom
+
+    import { HashRouter, Route } from "react-router-dom";
+
+react-router-dom 에는 많은 router가 있는데 여기서는 HashRouter를 사용한다.
+
+    import About from "./routes/About";
+    <Route path="/about" component={About} />
+
+Route에는 매우 중요한 props가 한개 들어간다. 그 prop는 렌더링할 스크린 다른 prop는 뭘 할지 정해준다.
+
+about 폴더의 About 컴포넌트
+
+    <Route path="/" exact={true} component={Home} />
+
+exact={true} 를 주게되면 정확한 경로에 대해서만 렌더링을 한다.
